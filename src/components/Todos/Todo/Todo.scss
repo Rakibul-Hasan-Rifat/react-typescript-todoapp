@@ -1,0 +1,30 @@
+div.todo {
+  margin: 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & :first-child,
+  & :last-child {
+    width: 10%;
+  }
+
+  & :nth-child(2) {
+    width: 60%;
+  }
+
+  input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    background-color: green !important;
+
+    &:checked + label {
+      color: #b2bec3;
+      text-decoration: line-through;
+    }
+  }
+
+  label {
+    text-align: left;
+  }
+}

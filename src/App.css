@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #30336b;
+}
+
+div.todo_list {
+  margin: 25px auto;
+  padding: 50px 0px 20px;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  width: 40vw;
+  height: 80vh;
+  overflow-y: auto;
+  border: 1px solid tomato;
+}
+
+@media only screen and (max-width: 992px) {
+  div.todo_list {
+    width: 75vw;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  div.todo_list {
+    width: 95vw;
+  }
+}
